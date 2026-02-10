@@ -147,3 +147,10 @@ function deletePhoto(index) {
     renderGallery();
     renderAdminGallery();
 }
+
+/* Service Worker Registration for PWA */
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js');
+    });
+}
