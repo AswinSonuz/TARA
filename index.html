@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TARA Mobile App</title>
+
+<meta name="theme-color" content="#0f0c29">
+<link rel="icon" type="image/png" href="logo.jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div style="position:fixed; top:20%; left:50%; transform:translateX(-50%); width:300px; height:300px; background:radial-gradient(circle, rgba(255,94,98,0.15) 0%, rgba(0,0,0,0) 70%); filter:blur(80px); z-index:-1; pointer-events:none;"></div>
+
+<div class="header">TARA</div>
+
+<div id="home" class="section active">
+    <div class="glass">
+        <h2>Welcome to TARA</h2>
+        <p>Glow Different.</p>
+    </div>
+
+    <h3>Our Team</h3>
+    <div class="members-container">
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="captain.png" alt="Member">
+                    <h3>Aswin TR</h3>
+                    <p>Captain</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Web Developer and a Designing Expert</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="vice.png" alt="Member">
+                    <h3>Dharsana</h3>
+                    <p>Vice Captain</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Quick Learning and Leadership</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member1.png" alt="Member">
+                    <h3>Aiswarya P</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Dancer and a good listener</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member2.png" alt="Member">
+                    <h3>Thomas</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Dancer and a good listener</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member3.png" alt="Member">
+                    <h3>Indraja</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Handball Player</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member4.png" alt="Member">
+                    <h3>Midhun</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>Good listener</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member5.png" alt="Member">
+                    <h3>Abhinesh</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>good listener</p>
+                </div>
+            </div>
+        </div>
+        <div class="member-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="member6.png" alt="Member">
+                    <h3>Arlin</h3>
+                    <p>Member</p>
+                </div>
+                <div class="card-back">
+                    <h3>Skills</h3>
+                    <p>good listener</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="gallery" class="section">
+    <div class="glass">
+        <h2>Photo Gallery</h2>
+        <p>Memories & Moments</p>
+    </div>
+    <div id="gallery-grid" class="gallery-grid"></div>
+</div>
+
+<div id="stats" class="section">
+    <div class="glass">
+        <h2>Group Statistics</h2>
+        <p>Real-time performance metrics.</p>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-box glass">
+            <h3>8</h3>
+            <p>Members</p>
+        </div>
+        <div class="stat-box glass">
+            <h3>18790</h3>
+            <p>Points</p>
+        </div>
+    </div>
+
+    <h3 class="section-header">Activity Level</h3>
+    <div class="glass">
+        <div class="chart-container">
+            <div class="bar" style="height: 40%;" data-value="7250" onclick="showDayDetails('Monday', '7250', 'Daily Task: 2250, Team Bonus: 5000')"><span>MON</span></div>
+            <div class="bar" style="height: 60%;" data-value="18790" onclick="showDayDetails('Tuesday', '18790', 'Hackathon Win: 15000, Bug Fixes: 3790')"><span>TUE</span></div>
+            <div class="bar" style="height: 0%;" data-value="" onclick="showDayDetails('Wednesday', '0', '')"><span>WED</span></div>
+        </div>
+    </div>
+
+    <h3 class="section-header">Skills Distribution</h3>
+    <div class="glass">
+        <div class="skill-stat">
+            <div class="skill-info">
+                <span>Design</span>
+                <span>85%</span>
+            </div>
+            <div class="progress-bar"><div class="fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-stat">
+            <div class="skill-info">
+                <span>Stage Interface</span>
+                <span>70%</span>
+            </div>
+            <div class="progress-bar"><div class="fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-stat">
+            <div class="skill-info">
+                <span>Marketing</span>
+                <span>20%</span>
+            </div>
+            <div class="progress-bar"><div class="fill" style="width:20%"></div></div>
+        </div>
+    </div>
+</div>
+
+<div id="admin" class="section">
+    <!-- Lock Screen -->
+    <div id="admin-lock" class="glass" style="text-align:center; padding:40px 20px; margin-top: 20px;">
+        <div style="font-size:40px; margin-bottom:20px;">🔒</div>
+        <h2>Admin Access</h2>
+        <p style="margin-bottom:20px; opacity:0.7;">Enter PIN to manage stats</p>
+        <input type="password" id="pin-input" placeholder="PIN" class="pin-input">
+        <button onclick="checkPin()" class="action-btn">Unlock Dashboard</button>
+        <p id="pin-error" style="color:#ff5e62; display:none; margin-top:15px;">Incorrect PIN</p>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-dashboard" style="display:none;">
+        <div class="glass" style="display:flex; justify-content:space-between; align-items:center;">
+            <h2>Dashboard</h2>
+            <button onclick="lockAdmin()" style="background:none; border:none; color:#ff5e62; font-size:12px;">Lock 🔒</button>
+        </div>
+
+        <div class="glass">
+            <h3>Global Score</h3>
+            <p style="font-size:12px; opacity:0.7; margin-bottom:10px;">Update the total group points</p>
+            <input type="number" id="total-score-input" placeholder="Enter new total score" class="admin-input">
+            <button onclick="updateTotalScore()" class="action-btn">Update Score</button>
+        </div>
+
+        <div class="glass">
+            <h3>Daily Stats</h3>
+            <p style="font-size:12px; opacity:0.7; margin-bottom:10px;">Edit chart data and breakdown</p>
+            <select id="day-select" class="admin-input">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+            </select>
+            <input type="number" id="day-points" placeholder="Points (e.g. 5000)" class="admin-input">
+            <input type="text" id="day-reason" placeholder="Breakdown (e.g. Task: 100, Bonus: 50)" class="admin-input">
+            <button onclick="updateDayStats()" class="action-btn">Update Day</button>
+        </div>
+
+        <div class="glass">
+            <h3>Gallery Manager</h3>
+            <p style="font-size:12px; opacity:0.7; margin-bottom:10px;">Upload and arrange photos</p>
+            <input type="file" id="gallery-upload" accept="image/*" class="admin-input">
+            <button onclick="uploadPhoto()" class="action-btn" style="margin-bottom:15px;">Upload Photo</button>
+            <p style="font-size:12px; margin-bottom:5px;">Tap red X to remove:</p>
+            <div id="admin-gallery-list" style="display:flex; flex-wrap:wrap; gap:10px;"></div>
+        </div>
+    </div>
+</div>
+
+<nav class="bottom-nav">
+    <button onclick="showSection('home', this)" class="nav-btn active">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        Home
+    </button>
+    <button onclick="showSection('gallery', this)" class="nav-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+        Gallery
+    </button>
+    <button onclick="showSection('stats', this)" class="nav-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+        Stats
+    </button>
+    <button onclick="showSection('admin', this)" class="nav-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        Admin
+    </button>
+</nav>
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <h2 id="modal-title">Notification</h2>
+        <div id="modal-body">This is a premium feature.</div>
+        <button onclick="closeModal()" style="margin-top:20px; padding:10px 20px; border-radius:10px; border:none; background:#ff5e62; color:white;">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
